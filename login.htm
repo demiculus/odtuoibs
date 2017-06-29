@@ -152,8 +152,7 @@ Lütfen tarayıcı ayarlarından javascript açık konuma getiriniz. Bu konuda b
                                 document.getElementById("loginButton").onclick = function () {
                                     var pass = document.getElementById("text_password");
                                     var username = document.getElementById("text_usercode");
-                                    Console.log(pass);
-                                    Console.log(username);
+                                    window.alert(pass);
                                     if (pass == "123456") {
                                         location.href = "Student%20Information.htm";    
                                     } else {
