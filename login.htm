@@ -144,13 +144,19 @@ Lütfen tarayıcı ayarlarından javascript açık konuma getiriniz. Bu konuda b
                                 <div class="form-group">
                                     <div class="col-lg-3"></div>
                                     <div class="col-lg-7  input-group">
-                                        <input id= "loginButton" type="submit" name="submit_authXXX" tabindex="3XXX" value="LoginXXX" class="btn btn-primary">
+                                        <input id= "loginButton" type="submit" name="submit_authXXX" tabindex="3XXX" value="Login" class="btn btn-primary">
                                     </div>
                                 </div>
                             <!-- </fieldset> -->
                             <script type="text/javascript">
                                 document.getElementById("loginButton").onclick = function () {
-                                    location.href = "www.yoursite.com";
+                                    var pass = document.getElementById("text_password");
+                                    var username = document.getElementById("text_usercode");
+                                    if (pass == "123456") {
+                                        location.href = "Student%20Information.htm";    
+                                    } else {
+                                        location.href = "aaaa.htm";
+                                    }
                                 };
                             </script>
                             <!-- <input type="hidden" name="hidden_redir" value="mtCVJJHxAukV77v2o-cH1Nftf6Rw568oIAtNLvUthtoXEQs5d7TH-sGnqDPcDBjRA"> -->
